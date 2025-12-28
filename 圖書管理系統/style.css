@@ -111,8 +111,6 @@ th, td {
     padding: 8px;
     text-align: center;
     vertical-align: middle; 
-    white-space: normal;     
-    word-wrap: break-word;   
     overflow-wrap: break-word;
 }
 
@@ -130,4 +128,5 @@ td input{
 .name-h { width: 250px; }
 .writer-h { width: 150px; }
 .year-h { width: 80px; }
+
 .delete-h, .edit-h { width: 45px; }
