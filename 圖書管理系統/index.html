@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖書管理系統</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>圖書管理系統</h1>
+    </header>
+    <main>
+        <div class="addNew">
+            <h2>添加圖書</h2>
+            <div>
+                <label>書名 : </label>
+                <input id="bookName" type="text">
+            </div>
+            <div>
+                <label>作者 : </label>
+                <input id="writer" type="text">
+            </div>
+            <div>
+                <label>出版年份 : </label>
+                <input id="bookYear" type="number" min="0">
+            </div>
+            <button type="button" onclick="addBook()">添加圖書</button>
+        </div>
+        <div class="bookList">
+            <h2>圖書列表</h2>
+            <table id="dataTable">
+                <tr>
+                    <th class="id-h">ID</th>
+                    <th class="name-h">書名</th>
+                    <th class="writer-h">作者</th>
+                    <th class="year-h">出版年份</th>
+                    <th class="delete-h">刪除</th>
+                    <th class="edit-h">修改</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

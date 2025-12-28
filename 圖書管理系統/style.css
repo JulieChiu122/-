@@ -1,0 +1,133 @@
+body{
+    background-image: url(./img/book.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(40, 57, 44, 0.8);
+    background-blend-mode: multiply;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header h1{
+    font-size:30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(207, 235, 202);
+    width: 20%;
+    border-radius: 10px;
+    color: #162e1e;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addNew, .bookList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(207, 235, 202);
+    padding: 20px 50px;
+    margin: 10px;
+    width: 65%;
+    border-radius: 10px;
+    color: #162e1e;
+}
+
+.addNew h2, .bookList h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.addNew button, .delete-btn, .edit-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.addNew button:hover{
+    color: rgb(207, 235, 202);
+    background-color: #2d4636;
+}
+
+.addNew button{
+    color: rgb(207, 235, 202);
+    background-color: #426550;
+}
+
+.edit-btn{
+    color: #f0fcfd;
+    background-color: rgb(59, 92, 132);
+}
+
+.edit-btn:hover{
+    color: #e2fdff;
+    background-color: rgb(23, 45, 72);
+}
+
+.delete-btn{
+    color: #f7e9e9;
+    background-color: rgb(175, 70, 70);
+}
+
+.delete-btn:hover{
+    color: #f7e9e9;
+    background-color: rgb(114, 24, 24);
+}
+
+.addNew input{
+    appearance: none;
+    border: 1.5px solid #5c8660;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+    padding: 5px;
+}
+
+.addNew input:focus{
+    border-color: #000000;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #2d4636;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle; 
+    white-space: normal;     
+    word-wrap: break-word;   
+    overflow-wrap: break-word;
+}
+
+th {
+    background-color: #b8d3ee;;
+    color: rgb(34, 56, 83);
+    font-weight: 500;
+}
+
+td input{ 
+    width: 90%;
+}
+
+.id-h { width: 50px; }
+.name-h { width: 250px; }
+.writer-h { width: 150px; }
+.year-h { width: 80px; }
+.delete-h, .edit-h { width: 45px; }
