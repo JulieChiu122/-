@@ -25,6 +25,10 @@ function addBook(){
     row.querySelector('.delete-btn').onclick = () => {
         if (confirm('確定要刪除?')){
             row.remove();
+            const table = document.getElementById('dataTable');
+            if (table.rows.length == 1){
+                nextId = 1;
+            }
         }
     };
 
@@ -49,5 +53,6 @@ function addBook(){
     };
 
     ['bookName', 'writer', 'bookYear'].forEach(id => document.getElementById(id).value = "");
+
 
 }
